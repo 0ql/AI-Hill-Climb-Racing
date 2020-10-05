@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AI Hill Climb Racing</title>
+</head>
+
+<body style="text-align: center; margin: 0;">
+	<script src="lib/neataptic.js"></script>
+	<script src="lib/decomp.min.js" type="text/javascript"></script>
+	<script src='lib/plotly.min.js'></script>
+	<script src="lib/matter.js"></script>
+
+	<script defer src="verticies.js"></script>
+	<script defer src="functions and vars.js"></script>
+	<script defer src="Agent.js"></script>
+	<script defer src="index.js"></script>
+
+	<div style="display: flex;">
+		<div id="main"></div>
+		<div style="margin: 100px">
+			<div id="gens">Generation: 0</div>
+			<div id="alive"></div>
+			<div id="lastScore"></div>
+			<div id="timer"></div>
+			<div id="mutationRate"></div>
+		</div>
+	</div>
+	<div style="display: flex;">
+		<div id="chart"></div>
+		<div id="chart2"></div>
+	</div>
+</body>
+
+</html>
