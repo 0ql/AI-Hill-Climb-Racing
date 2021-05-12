@@ -76,9 +76,9 @@ function drawPlots() {
 			type: 'bar'}
 	];
 	var layout = {
-		title: "Durschnittliche Punktzahl",
+		title: "Average Score",
 		xaxis: { title: "Generation" },
-		yaxis: { title: "Punktzahl" }
+		yaxis: { title: "Score" }
 	}
 
 	Plotly.newPlot('chart', data, layout);
@@ -88,9 +88,9 @@ function drawPlots() {
 		type: 'histogram',
 	};
 	var layout = {
-		title: "Punktzahl der Agenten der letzten Generation",
-		xaxis: { title: "Erreichte Punktzahl" },
-		yaxis: { title: "Anzahl der Agenten" }
+		title: "Score of Agents from last generation",
+		xaxis: { title: "Score" },
+		yaxis: { title: "Amount of Agents" }
 	}
 	Plotly.newPlot('chart2', [data], layout);
 }
@@ -100,6 +100,6 @@ function reset() {
 	timer = 0;
 	gens++;
 	scoresThisRound = [];
-	lastScoreTag.innerHTML = "Durchschnitt letzter Generation: " + Math.round(avarageScores[avarageScores.length - 1]);
+	lastScoreTag.innerHTML = "Average of last generation: " + Math.round(avarageScores[avarageScores.length - 1]);
 	genTag.innerHTML = "Generation: " + gens;
 }
