@@ -12,7 +12,7 @@ document.getElementById('mutationRate').innerHTML = 'Mutation rate: '+MUTATIONRA
 // Main Loop
 Matter.Events.on(engine, "beforeUpdate", () => {
 	genTag.innerHTML = "Generation: " + gens;
-	aliveTag.innerHTML = "Alive: " + agentsAlive + " von " + POPSIZE;
+	aliveTag.innerHTML = "Alive: " + agentsAlive + " of " + POPSIZE;
 	timerTag.innerHTML = "Timer: "+(TIMER-timer);
 
 	if (agentsAlive > 0 && timer < TIMER) { 
