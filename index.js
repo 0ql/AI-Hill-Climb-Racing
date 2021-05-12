@@ -7,12 +7,12 @@ var terrain = Bodies.fromVertices(6000, 600, [verticies], {
 });
 World.add(world, terrain);
 
-document.getElementById('mutationRate').innerHTML = 'Mutationsrate: '+MUTATIONRATE*100+"%";
+document.getElementById('mutationRate').innerHTML = 'Mutation rate: '+MUTATIONRATE*100+"%";
 
 // Main Loop
 Matter.Events.on(engine, "beforeUpdate", () => {
 	genTag.innerHTML = "Generation: " + gens;
-	aliveTag.innerHTML = "Am Leben: " + agentsAlive + " von " + POPSIZE;
+	aliveTag.innerHTML = "Alive: " + agentsAlive + " von " + POPSIZE;
 	timerTag.innerHTML = "Timer: "+(TIMER-timer);
 
 	if (agentsAlive > 0 && timer < TIMER) { 
